@@ -716,7 +716,7 @@ std::vector<OptionHandler*> OptionHandlerFactory::createOptionHandlers()
   }
   {
     OptionHandler* op(new NumberOptionHandler(
-        PREF_SUMMARY_INTERVAL, TEXT_SUMMARY_INTERVAL, "60", 0, INT32_MAX));
+        PREF_SUMMARY_INTERVAL, TEXT_SUMMARY_INTERVAL, "0", 0, INT32_MAX));
     op->addTag(TAG_ADVANCED);
     handlers.push_back(op);
   }
