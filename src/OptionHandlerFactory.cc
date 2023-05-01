@@ -1078,7 +1078,7 @@ std::vector<OptionHandler*> OptionHandlerFactory::createOptionHandlers()
   {
     OptionHandler* op(
         new BooleanOptionHandler(PREF_CHECK_CERTIFICATE, TEXT_CHECK_CERTIFICATE,
-                                 A2_V_TRUE, OptionHandler::OPT_ARG));
+                                 A2_V_FALSE, OptionHandler::OPT_ARG));
     op->addTag(TAG_HTTP);
     op->addTag(TAG_HTTPS);
     handlers.push_back(op);
